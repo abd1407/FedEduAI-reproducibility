@@ -1,0 +1,58 @@
+{
+  "schema_version": "v19",
+  "run_id": "run_20260910_190700_v19_c668991d",
+  "delta": 1e-06,
+  "per_client": {
+    "201": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.358239287214451
+    },
+    "202": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.445706793251121
+    },
+    "203": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.46537087853954
+    },
+    "204": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.448307801782239
+    },
+    "205": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.4600164555308215
+    },
+    "230": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.452845835431855
+    },
+    "231": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.4708592049105444
+    },
+    "232": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.466104250019505
+    },
+    "233": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.469823321719014
+    },
+    "234": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.467343940586009
+    },
+    "235": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.462682435354813
+    },
+    "236": {
+      "n_releases_steps": 3,
+      "epsilon_composed": 5.466104250019505
+    }
+  },
+  "epsilon_max_composed": 5.4708592049105444,
+  "scope": "All DP model releases in this run composed per faculty (RDP). Non-DP arms and evaluation metrics are outside this bound.",
+  "note": "Students recur across seeds; per-faculty composition over every release is the conservative bound for a student."
+}

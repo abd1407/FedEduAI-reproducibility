@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper and the archived package."
+title: "FedEduAI: code and results package (reproducibility repository)"
+version: "1.0.0"
+date-released: "2026-11-04"
+license: MIT
+repository-code: "https://github.com/<to-be-inserted>/FedEduAI-reproducibility"
+doi: "Zenodo DOI: to be inserted"
+authors:
+  - family-names: Alsubhy
+    given-names: Abdullah
+  - family-names: Alqurashi
+    given-names: Fahad
+  - family-names: Abi Sen
+    given-names: Adnan
+  - family-names: Mehmood
+    given-names: Rashid
+preferred-citation:
+  type: article
+  title: "FedEduAI: A Privacy-Aware Federated Multimodal Architecture for Adaptive Learning Analytics and Decision Support"
+  journal: "PeerJ Computer Science"
+  year: 2026
+  notes: "Under review."
+  authors:
+    - family-names: Alsubhy
+      given-names: Abdullah
+    - family-names: Alqurashi
+      given-names: Fahad
+    - family-names: Abi Sen
+      given-names: Adnan
+    - family-names: Mehmood
+      given-names: Rashid

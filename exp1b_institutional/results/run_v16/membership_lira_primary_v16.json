@@ -1,0 +1,211 @@
+{
+  "schema_version": "v16",
+  "run_id": "run_20260909_221120_v16_572abe60",
+  "status": "in_progress",
+  "results": [
+    {
+      "seed": 0,
+      "cohort": "primary",
+      "target_case": "A_FedAvg",
+      "status": "complete",
+      "attack": "offline LiRA (Carlini et al. 2022): per-example Gaussian on OUT-shadow logit confidences",
+      "n_shadows": 8,
+      "shadow_training": "same task.local_train and FedAvg schedule as the target, random 50% of train+test pool, no Flower transport",
+      "mean_out_shadows_per_example": 4.028,
+      "seconds": 24.62462505199983,
+      "lira": {
+        "auc": 0.49936034374999994,
+        "auc_ci95": [
+          0.48468144999999996,
+          0.51148006875
+        ],
+        "tpr_at_fpr_le_0_01": 0.01125,
+        "tpr_at_fpr_le_0_001": 0.0,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "loss_baseline": {
+        "auc": 0.49486096874999996,
+        "auc_ci95": [
+          0.48178186796875,
+          0.5078150625000001
+        ],
+        "tpr_at_fpr_le_0_01": 0.00675,
+        "tpr_at_fpr_le_0_001": 0.0,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "interpretation": "Empirical membership leakage on this split; not a proof of privacy. DP arms should approach AUC 0.5 and low TPR at 0.1% FPR."
+    },
+    {
+      "seed": 0,
+      "cohort": "primary",
+      "target_case": "D_DP_SecAgg_e3",
+      "status": "complete",
+      "attack": "offline LiRA (Carlini et al. 2022): per-example Gaussian on OUT-shadow logit confidences",
+      "n_shadows": 8,
+      "shadow_training": "same task.local_train and FedAvg schedule as the target, random 50% of train+test pool, no Flower transport",
+      "mean_out_shadows_per_example": 4.01725,
+      "seconds": 149.52750475599987,
+      "lira": {
+        "auc": 0.493907,
+        "auc_ci95": [
+          0.48218700078125,
+          0.5113639328124999
+        ],
+        "tpr_at_fpr_le_0_01": 0.0,
+        "tpr_at_fpr_le_0_001": 0.0,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "loss_baseline": {
+        "auc": 0.48751553125,
+        "auc_ci95": [
+          0.4732975625,
+          0.50080533984375
+        ],
+        "tpr_at_fpr_le_0_01": 0.008,
+        "tpr_at_fpr_le_0_001": 0.0,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "interpretation": "Empirical membership leakage on this split; not a proof of privacy. DP arms should approach AUC 0.5 and low TPR at 0.1% FPR."
+    },
+    {
+      "seed": 1,
+      "cohort": "primary",
+      "target_case": "A_FedAvg",
+      "status": "complete",
+      "attack": "offline LiRA (Carlini et al. 2022): per-example Gaussian on OUT-shadow logit confidences",
+      "n_shadows": 8,
+      "shadow_training": "same task.local_train and FedAvg schedule as the target, random 50% of train+test pool, no Flower transport",
+      "mean_out_shadows_per_example": 4.002375,
+      "seconds": 22.892778904999886,
+      "lira": {
+        "auc": 0.49824621874999997,
+        "auc_ci95": [
+          0.4855733890625,
+          0.5118880656250001
+        ],
+        "tpr_at_fpr_le_0_01": 0.01,
+        "tpr_at_fpr_le_0_001": 0.0,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "loss_baseline": {
+        "auc": 0.49797990625,
+        "auc_ci95": [
+          0.48589366484375,
+          0.51197662890625
+        ],
+        "tpr_at_fpr_le_0_01": 0.0085,
+        "tpr_at_fpr_le_0_001": 0.0005,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "interpretation": "Empirical membership leakage on this split; not a proof of privacy. DP arms should approach AUC 0.5 and low TPR at 0.1% FPR."
+    },
+    {
+      "seed": 1,
+      "cohort": "primary",
+      "target_case": "D_DP_SecAgg_e3",
+      "status": "complete",
+      "attack": "offline LiRA (Carlini et al. 2022): per-example Gaussian on OUT-shadow logit confidences",
+      "n_shadows": 8,
+      "shadow_training": "same task.local_train and FedAvg schedule as the target, random 50% of train+test pool, no Flower transport",
+      "mean_out_shadows_per_example": 3.961375,
+      "seconds": 130.35506282100005,
+      "lira": {
+        "auc": 0.495833875,
+        "auc_ci95": [
+          0.48128550078125,
+          0.50846355859375
+        ],
+        "tpr_at_fpr_le_0_01": 0.0,
+        "tpr_at_fpr_le_0_001": 0.0,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "loss_baseline": {
+        "auc": 0.4948083125,
+        "auc_ci95": [
+          0.4804073226562499,
+          0.50790809453125
+        ],
+        "tpr_at_fpr_le_0_01": 0.006,
+        "tpr_at_fpr_le_0_001": 0.00075,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "interpretation": "Empirical membership leakage on this split; not a proof of privacy. DP arms should approach AUC 0.5 and low TPR at 0.1% FPR."
+    },
+    {
+      "seed": 2,
+      "cohort": "primary",
+      "target_case": "A_FedAvg",
+      "status": "complete",
+      "attack": "offline LiRA (Carlini et al. 2022): per-example Gaussian on OUT-shadow logit confidences",
+      "n_shadows": 8,
+      "shadow_training": "same task.local_train and FedAvg schedule as the target, random 50% of train+test pool, no Flower transport",
+      "mean_out_shadows_per_example": 3.998125,
+      "seconds": 24.189964193999913,
+      "lira": {
+        "auc": 0.4988486875,
+        "auc_ci95": [
+          0.4863426578125,
+          0.5128328531249999
+        ],
+        "tpr_at_fpr_le_0_01": 0.00725,
+        "tpr_at_fpr_le_0_001": 0.0,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "loss_baseline": {
+        "auc": 0.49398546875000005,
+        "auc_ci95": [
+          0.482649465625,
+          0.5069710070312501
+        ],
+        "tpr_at_fpr_le_0_01": 0.009,
+        "tpr_at_fpr_le_0_001": 0.00125,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "interpretation": "Empirical membership leakage on this split; not a proof of privacy. DP arms should approach AUC 0.5 and low TPR at 0.1% FPR."
+    },
+    {
+      "seed": 2,
+      "cohort": "primary",
+      "target_case": "D_DP_SecAgg_e3",
+      "status": "complete",
+      "attack": "offline LiRA (Carlini et al. 2022): per-example Gaussian on OUT-shadow logit confidences",
+      "n_shadows": 8,
+      "shadow_training": "same task.local_train and FedAvg schedule as the target, random 50% of train+test pool, no Flower transport",
+      "mean_out_shadows_per_example": 4.013875,
+      "seconds": 126.960902756,
+      "lira": {
+        "auc": 0.49765103125,
+        "auc_ci95": [
+          0.48523655546875,
+          0.50984675703125
+        ],
+        "tpr_at_fpr_le_0_01": 0.0,
+        "tpr_at_fpr_le_0_001": 0.0,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "loss_baseline": {
+        "auc": 0.49965253125,
+        "auc_ci95": [
+          0.48694542578125,
+          0.5116824726562501
+        ],
+        "tpr_at_fpr_le_0_01": 0.009,
+        "tpr_at_fpr_le_0_001": 0.00175,
+        "n_members": 4000,
+        "n_nonmembers": 4000
+      },
+      "interpretation": "Empirical membership leakage on this split; not a proof of privacy. DP arms should approach AUC 0.5 and low TPR at 0.1% FPR."
+    }
+  ]
+}

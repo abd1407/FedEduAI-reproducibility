@@ -1,0 +1,9 @@
+{
+  "schema_version": "v16",
+  "run_id": "run_20260909_221120_v16_572abe60",
+  "official_next_term_warning": "blocked_missing_longitudinal_status",
+  "independent_host_deployment": "not_run (single-process protocol transport only; start_server.sh/start_client.sh provided for a pilot)",
+  "educational_intervention": "not_run",
+  "stronger_membership_attack": "offline_LiRA_completed",
+  "note": "v16 trains all arms from scratch and closes the evaluation-side gaps; deployment and intervention evidence remain future work."
+}

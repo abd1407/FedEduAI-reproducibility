@@ -1,0 +1,191 @@
+{
+  "schema_version": "v19",
+  "run_id": "run_20260910_190700_v19_c668991d",
+  "notebook": "FedEduAI_Validation_v19.ipynb",
+  "generated_core_sha256": "8151b27b0c2901787fd7348e809d5129fd171fd83533fb3a61a4aae25bbaeade",
+  "run_mode": "full",
+  "settings": {
+    "target_recall": 0.8,
+    "bootstrap": 300,
+    "cases": [
+      "Central",
+      "A_FedAvg",
+      "B_SecAgg",
+      "C_DP_e3",
+      "C_DP_e8",
+      "D_DP_SecAgg_e3",
+      "D_DP_SecAgg_e8",
+      "E_Clipped_Poisson_no_noise",
+      "F_Poisson_only_no_clip"
+    ],
+    "paired_comparisons": [
+      [
+        "Central",
+        "A_FedAvg"
+      ],
+      [
+        "A_FedAvg",
+        "B_SecAgg"
+      ],
+      [
+        "A_FedAvg",
+        "E_Clipped_Poisson_no_noise"
+      ],
+      [
+        "F_Poisson_only_no_clip",
+        "E_Clipped_Poisson_no_noise"
+      ],
+      [
+        "A_FedAvg",
+        "F_Poisson_only_no_clip"
+      ],
+      [
+        "E_Clipped_Poisson_no_noise",
+        "C_DP_e3"
+      ],
+      [
+        "E_Clipped_Poisson_no_noise",
+        "C_DP_e8"
+      ],
+      [
+        "C_DP_e3",
+        "D_DP_SecAgg_e3"
+      ],
+      [
+        "A_FedAvg",
+        "D_DP_SecAgg_e3"
+      ]
+    ],
+    "lira": {
+      "shadows": 8,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "targets": [
+        "A_FedAvg",
+        "D_DP_SecAgg_e3"
+      ],
+      "max_per_class": 2000
+    },
+    "extended_cohort": {
+      "enabled": false,
+      "K": 1,
+      "cases": [
+        "Central",
+        "A_FedAvg",
+        "D_DP_SecAgg_e3"
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "training": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rounds": 5,
+    "local_epochs": 1,
+    "batch_size": 64,
+    "learning_rate": 0.05,
+    "max_grad_norm": 1.0,
+    "epsilons": [
+      3.0,
+      8.0
+    ],
+    "delta": 1e-06,
+    "secure_rng": false
+  },
+  "data_config": {
+    "paths": {
+      "students": "/content/drive/MyDrive/iudb/students.csv",
+      "grades": "/content/drive/MyDrive/iudb/student_records.csv",
+      "absence": "/content/drive/MyDrive/iudb/DMO_IU/Absence.csv"
+    },
+    "columns": {
+      "students": {
+        "student_id": "STUDENT_ID",
+        "gpa": "LAST_CUM_GPA",
+        "faculty": "FACULTY_NO",
+        "degree": "DEGREE_CODE",
+        "nationality": "NATIONALITY_CODE",
+        "status": "STATUS_CODE",
+        "gender": "",
+        "study": "",
+        "campus": ""
+      },
+      "grades": {
+        "student_id": "STUDENT_ID",
+        "semester": "SEMESTER",
+        "mark": "CONFIRMED_MARK",
+        "mark_fallback": "MARK",
+        "course": "COURSE_NO"
+      },
+      "absence": {
+        "student_id": "STUDENT_ID",
+        "semester": "SEMESTER",
+        "days": "ABSENCE_DAYS",
+        "late": "LATE_DAYS"
+      }
+    },
+    "settings": {
+      "early_semesters_K": 2,
+      "target_source": "final_gpa",
+      "target_mode": "gpa_median",
+      "pass_mark": 60.0,
+      "gpa_scale_max": 5.0,
+      "gpa_threshold": null,
+      "risk_status_codes": [],
+      "semester_year_offset": 1400,
+      "min_students_per_faculty": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "test_size": 0.2,
+      "val_size": 0.2,
+      "min_report_n": 30,
+      "min_class_n": 5,
+      "bootstrap": 300,
+      "sample_students": null,
+      "export_predictions": false,
+      "equivalence_margins": {
+        "acc": 0.01,
+        "auc": 0.005
+      },
+      "equivalence_rationale": "Pre-specified before v19 training: one accuracy point and 0.005 AUC are below the smallest difference the institution considers actionable.",
+      "output_dir": "/content/drive/MyDrive/iudb/results/run_20260910_190700_v19_c668991d"
+    }
+  },
+  "warning_config": {
+    "semester_status_path": "/content/drive/MyDrive/iudb/academic_status_by_term.csv",
+    "example_threshold": 2.75,
+    "policy_scope_confirmed": false,
+    "incident_only": true,
+    "K": 2,
+    "min_client_n": 300,
+    "target_recall": 0.8,
+    "source_url": "https://iu.edu.sa/دليل-الطالب"
+  },
+  "packages": {
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "torch": "2.11.0+cu128",
+    "flwr": "1.22.0",
+    "opacus": "1.5.4"
+  },
+  "purpose": "Train all arms from scratch on the institutional cohort; matched central baseline; controls E/F; fairness, calibration, TOST, LiRA, DP composition, coverage audit."
+}

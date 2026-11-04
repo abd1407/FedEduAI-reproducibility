@@ -1,0 +1,15 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "n": 2442,
+ "unparsed": 0,
+ "data_hash": "86b6af7101c1b3de",
+ "rmse": 1.087641256700022,
+ "mae": 0.9091420966420967,
+ "pearson": 0.7199077227071919,
+ "spearman": 0.6826627107813174,
+ "acc_within_0.5": 0.3325143325143325,
+ "acc_within_1.0": 0.8542178542178542,
+ "system_prompt": "You are an experienced computer-science instructor grading short-answer questions. Grade the STUDENT ANSWER against the REFERENCE ANSWER on a 0-5 scale (half points allowed): 5 = fully correct and complete; 4 = correct with a minor omission; 3 = partially correct; 2 = mostly incorrect but shows some understanding; 1 = largely incorrect; 0 = wrong, empty or irrelevant. Judge meaning, not wording. Output ONLY the number.",
+ "decoding": "greedy, max_new_tokens=6, 4-bit NF4",
+ "seconds": 667.6395492553711
+}

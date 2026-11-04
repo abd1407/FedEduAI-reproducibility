@@ -1,0 +1,58 @@
+{
+  "schema_version": "v16",
+  "run_id": "run_20260909_221120_v16_572abe60",
+  "run_mode": "full",
+  "files": [
+    {
+      "name": "coverage_audit_v16.json",
+      "bytes": 1858,
+      "sha256": "fe90f3b094d667632a2be3bfdc16d5e8f208888d6305887850de87bec485ab45"
+    },
+    {
+      "name": "dp_budget_composition_v16.json",
+      "bytes": 1560,
+      "sha256": "f69f8ac34e2c8ec0cd8acd7736ea92a3ea6bfa08650d8409157da76725618719"
+    },
+    {
+      "name": "execution_source_audit_v16.json",
+      "bytes": 399,
+      "sha256": "14e6a74a93340871b9ad23c4105aa2797e1c598e6f3f3de16e958055ae912d8f"
+    },
+    {
+      "name": "membership_lira_primary_v16.json",
+      "bytes": 7205,
+      "sha256": "015ce9a9bfeecbdf3a992d4fdff9035b3250126ca0c51b848260d484f295f160"
+    },
+    {
+      "name": "paper_tables_v16.md",
+      "bytes": 6696,
+      "sha256": "84947e4f6edadfeb8a4eeed04c67b25d7b86bdbbbddb227b6046264b1ce8e73f"
+    },
+    {
+      "name": "privacy_validation_extended_v16.json",
+      "bytes": 538236,
+      "sha256": "2d5ee91ea1e0d0095c771c358ed4c9a124e05d20982a0d32c4693aefc0f9da72"
+    },
+    {
+      "name": "privacy_validation_primary_v16.json",
+      "bytes": 2648879,
+      "sha256": "1371ec88c29de394dbe024babe948eff319d987eb6ece0f233d53570738049b6"
+    },
+    {
+      "name": "remaining_evidence_v16.json",
+      "bytes": 526,
+      "sha256": "28538761cc483f20d1bae038f7a648c81e4f416447d816f582daa06be19fa1d5"
+    },
+    {
+      "name": "run_manifest_v16.json",
+      "bytes": 4429,
+      "sha256": "9b5b558766681d908288adbbcb0453406882fe02a575c084775cc0b41afd3888"
+    },
+    {
+      "name": "warning_target_audit_v16.json",
+      "bytes": 1901,
+      "sha256": "195979c8685defd04a5c75118f63532c1a32eccb0ae268c67dc79189027a8958"
+    }
+  ],
+  "scope": "All versioned result files except this inventory. Private data/model shards are excluded."
+}

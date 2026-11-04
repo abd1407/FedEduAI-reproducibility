@@ -1,0 +1,7 @@
+{
+  "schema_version": "v19",
+  "run_id": "run_20260910_190700_v19_c668991d",
+  "generated_core_sha256": "8151b27b0c2901787fd7348e809d5129fd171fd83533fb3a61a4aae25bbaeade",
+  "executed_input_sha256": "7159c44a8451c4ff6e3cafb6cac8eb2afccccdf493adf1704c6f5b74f196f7ea",
+  "note": "Generated code fingerprint and executed input-history fingerprint are distinct; no source history or secrets exported."
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "v19",
+  "run_id": "run_20260910_190700_v19_c668991d",
+  "run_mode": "full",
+  "files": [
+    {
+      "name": "coverage_audit_v19.json",
+      "bytes": 1255,
+      "sha256": "f8625165125f4ad65dcb02c075c91889ae336fee9bf2588232bb9855116b8fcc"
+    },
+    {
+      "name": "dp_budget_composition_v19.json",
+      "bytes": 1541,
+      "sha256": "ba5a2a4be3f8123e04439c81247d58274760ac2870592ce30cef4e68ea803d05"
+    },
+    {
+      "name": "execution_source_audit_v19.json",
+      "bytes": 399,
+      "sha256": "896e997ffb1ceb0ffd3d3002deec43904d7b69a961891a9550e3f6085f5a0ae9"
+    },
+    {
+      "name": "paper_tables_v19.md",
+      "bytes": 1955,
+      "sha256": "479d78bc805dc17af596928f5cf8603c7020714ed5fe410d97d2ef1b9adcafd0"
+    },
+    {
+      "name": "run_manifest_v19.json",
+      "bytes": 4432,
+      "sha256": "0783237d8a640c9e1485601290b64fdefd860ea5bd587e9690b256f5c34805c9"
+    },
+    {
+      "name": "schedule_sweep_v19.json",
+      "bytes": 240299,
+      "sha256": "ac26a54fd42173d6a9ef56662da64cd5ea458c80d9038b6ef360adead093b4ee"
+    },
+    {
+      "name": "warning_target_audit_v19.json",
+      "bytes": 1901,
+      "sha256": "bf1c83ca9981a74b6fa7aa111622a29b0e9af665f5ce4839261838a52d488344"
+    }
+  ],
+  "scope": "All versioned result files except this inventory. Private data/model shards are excluded."
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "v19",
+  "run_id": "run_20260910_190700_v19_c668991d",
+  "source_tables": {
+    "students_input": 105339,
+    "students_missing_id": 0,
+    "grade_rows_input": 3954659,
+    "grade_rows_missing_id": 0,
+    "grade_rows_usable": 3819767,
+    "absence_rows_input": 2172690
+  },
+  "students_with_any_usable_grade_row": 84784,
+  "students_by_observed_semesters": {
+    "0": 20555,
+    "1": 8660,
+    "2": 16119,
+    "3_or_more": 60005
+  },
+  "grade_rows_attributed_to_students_table": 3819702,
+  "note": "Feature windows use the first K observed semesters; all later usable rows shape only the final-GPA snapshot held by the institution.",
+  "primary_cohort": {
+    "K": 2,
+    "n_modeled": 59696,
+    "share_of_students_input": 0.5667036899913612,
+    "share_of_students_with_grades": 0.7040951122853368,
+    "grade_rows_of_modeled_students_total": 3541636,
+    "grade_rows_inside_feature_window": 1017459,
+    "positive_rate": 0.2131466094880729,
+    "clients": {
+      "201": 33672,
+      "202": 8562,
+      "204": 5139,
+      "205": 4199,
+      "230": 2516,
+      "203": 1982,
+      "235": 784,
+      "236": 677,
+      "232": 664,
+      "234": 620,
+      "233": 562,
+      "231": 319
+    },
+    "excluded_clients_by_min_size": {}
+  }
+}
