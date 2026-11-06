@@ -1,25 +1,25 @@
-# الجدول 3-د — مسح طول الجدول (run_20260910_190700_v19_c668991d)
+# Table 3-D — schedule-length sweep (run_20260910_190700_v19_c668991d)
 
-السؤال المحدد مسبقًا: At 50 rounds, what is the directly measured DP cost (A minus D) and does it match the clipping-only control (A minus E, E minus D) as it did at 5-25 rounds?
+Pre-specified question: At 50 rounds, what is the directly measured DP cost (A minus D) and does it match the clipping-only control (A minus E, E minus D) as it did at 5-25 rounds?
 
-## الدقة (%) وAUC عند سياسة العتبة الموحدة، بحسب عدد الجولات (متوسط البذور ± انحراف)
+## Accuracy (%) and AUC under the common threshold policy, by number of rounds (mean ± SD over seeds)
 
-| الجولات | مركزي دقة | A: FedAvg دقة | E: قص + Poisson دقة | D: DP + SecAgg (ε = 3) دقة | مركزي AUC | A: FedAvg AUC | E: قص + Poisson AUC | D: DP + SecAgg (ε = 3) AUC |
+| Rounds | Central accuracy | A: FedAvg accuracy | E: clipping + Poisson accuracy | D: DP + SecAgg (ε = 3) accuracy | Central AUC | A: FedAvg AUC | E: clipping + Poisson AUC | D: DP + SecAgg (ε = 3) AUC |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 50 | 89.66 ± 0.20 | 89.49 ± 0.08 | 87.77 ± 0.19 | 87.75 ± 0.22 | 0.9481 ± 0.0012 | 0.9447 ± 0.0015 | 0.9323 ± 0.0015 | 0.9326 ± 0.0016 |
-| أفضل جولة على التحقق | 89.67 ± 0.22 | 89.44 ± 0.19 | 87.67 ± 0.23 | — | 0.9482 ± 0.0011 | 0.9447 ± 0.0015 | 0.9324 ± 0.0015 | — |
+| best validation round | 89.67 ± 0.22 | 89.44 ± 0.19 | 87.67 ± 0.23 | — | 0.9482 ± 0.0011 | 0.9447 ± 0.0015 | 0.9324 ± 0.0015 | — |
 
-## الفجوة المركزي − الفيدرالي واختبار التكافؤ المصحح (سياسة العتبة الموحدة)
+## Central − federated gap and corrected equivalence test (common threshold policy)
 
-| الجولات | فرق الدقة | فاصل 90% | تكافؤ (هامش 0.01)؟ | فرق AUC | فاصل 90% | تكافؤ (هامش 0.005)؟ |
+| Rounds | Accuracy difference | 90% CI | Equivalent (margin 0.01)? | AUC difference | 90% CI | Equivalent (margin 0.005)? |
 |---|---:|---|---|---:|---|---|
 | 50 | 0.0016 | [-0.0013, 0.0046] | True | 0.0034 | [0.0024, 0.0044] | True |
-| أفضل جولة على التحقق | 0.0023 | [-0.0042, 0.0087] | True | 0.0034 | [0.0018, 0.0051] | False |
+| best validation round | 0.0023 | [-0.0042, 0.0087] | True | 0.0034 | [0.0018, 0.0051] | False |
 
-## كلفة الخصوصية بحسب طول الجدول (A − D، فرق الدقة المزدوج، متوسط البذور)
+## Privacy cost by schedule length (A − D, paired accuracy difference, mean over seeds)
 
-| الجولات | A − D (دقة) | A − E (دقة: القص) | E − D (دقة: الضوضاء) | ε المسجلة لأقصى عميل |
+| Rounds | A − D (accuracy) | A − E (accuracy: clipping) | E − D (accuracy: noise) | recorded ε of the maximum client |
 |---|---:|---:|---:|---:|
 | 50 | 1.74 | 1.73 | 0.02 | 2.999 |
 
-ε المركّبة عبر جميع إصدارات DP في هذا المسح (أقصى كلية) = 5.47 عند δ = 1e-06.
+Composed ε over all DP releases in this sweep (maximum college) = 5.47 at δ = 1e-06.
